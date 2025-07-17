@@ -60,6 +60,13 @@ const Navbar: React.FC = () => {
                 الفريق
               </a>
               <a
+              href="#clients"
+              className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              عملائنا
+            </a>
+              <a
                 href="#contact"
                 onClick={(e) => handleScroll(e, "contact")}
                 className="text-white hover:text-blue-200 px-3 py-2 text-l font-medium transition-colors duration-200 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]"
@@ -142,19 +149,19 @@ const Navbar: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-2">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-blue-700/50 backdrop-blur-xl rounded-2xl border border-blue-500/20 shadow-lg mx-4 sm:mx-6 lg:mx-8">
-          <a
-              href="#services"
-              className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              الخدمات
-            </a>
             <a
               href="#about"
               className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               عن الشركة
+            </a>
+          <a
+              href="#services"
+              className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              الخدمات
             </a>
             <a
               href="#experience"
@@ -169,6 +176,13 @@ const Navbar: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               الفريق
+            </a>
+            <a
+              href="#clients"
+              className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              عملائنا
             </a>
             <a
               href="#contact"
