@@ -31,7 +31,7 @@ export default function AboutSection() {
   return (
     <div className="bg-gray-200 py-19">
     <div className="container ">
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="pt-16 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center" >
             <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0057B7] mb-3 scroll-mt-20 " id='about'>
             عن الشركة
@@ -40,7 +40,7 @@ export default function AboutSection() {
             </div>
            
         </section>
-        <div className="py-12 flex justify-center  items-center">
+        <div className="pt-3 pb-12 flex justify-center  items-center">
   <section className=" p-4  max-w-7xl w-full ">
   <div className="py-12 flex justify-center">
   <div className="max-w-7xl w-full">

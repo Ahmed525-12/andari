@@ -23,9 +23,9 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Title */}
           <div className="flex-shrink-0">
-            <h1 className="text-white text-xl font-bold tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
+            <a href="header" onClick={(e) => handleScroll(e, "header")}  className="text-white text-xl font-bold tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
               ANDARİ
-            </h1>
+            </a>
           </div>
 
           {/* Desktop Navigation Menu */}
@@ -196,7 +196,7 @@ const Navbar: React.FC = () => {
           
           
             <div className="pt-2">
-              <button className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
+              <a  href='https://wa.me/0568026357' target='_blank' className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -210,7 +210,7 @@ const Navbar: React.FC = () => {
                   />
                 </svg>
                 <span>تواصل معنا</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

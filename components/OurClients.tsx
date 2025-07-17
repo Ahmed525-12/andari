@@ -1,77 +1,60 @@
-"use client"; 
-import Image from 'next/image'
-import dynamic from "next/dynamic";
+"use client";
+import Image from "next/image";
+import React from "react";
+import headerImage from "../public/a41839340065d7f75548c62b4468d77f00a8d0a0.png";
 
-import React from 'react'
-import "swiper/css";
-import "swiper/css/pagination";
-import headerImage from '../public/a41839340065d7f75548c62b4468d77f00a8d0a0.png'
-const Swiper = dynamic(
-    () => import("swiper/react").then((mod) => mod.Swiper),
-    { ssr: false }
-  );
-  const SwiperSlide = dynamic(
-    () => import("swiper/react").then((mod) => mod.SwiperSlide),
-    { ssr: false }
-  );
-  
-  import { Pagination, Autoplay } from 'swiper/modules';
-  
-  type Logo = { src: string; alt: string };
-  const logos: Logo[] = [
-    { src: "/a41839340065d7f75548c62b4468d77f00a8d0a0.png", alt: "Client A" },
-    { src: "/a41839340065d7f75548c62b4468d77f00a8d0a0.png", alt: "Client B" },
-    { src: "/a41839340065d7f75548c62b4468d77f00a8d0a0.png", alt: "Client C" },
-    { src: "/a41839340065d7f75548c62b4468d77f00a8d0a0.png", alt: "Client D" },
-    { src: "/a41839340065d7f75548c62b4468d77f00a8d0a0.png", alt: "Client E" },
-  ];
-  
+const clientImages = [
+  "/i1.png",
+  "/i2.png",
+  "/i3.png",
+  "/i4.png",
+  "/i5.png"
+];
 
 export default function OurClients() {
   return (
-   <div className="relative w-full ">
-         {/* Background Image */}
-         <Image
-           src={headerImage}
-           alt="Hero Image"
-           fill
-           className="object-cover object-center"
-           priority
-         />
-         
-         {/* Transparent Black Overlay */}
-         <div className="absolute inset-0 bg-black/50 z-10"></div>
-         <div className="relative z-20   h-full px-4 sm:px-6 lg:px-8">
-<div className="py-16">
-<Swiper
-      modules={[Pagination, Autoplay]}
-      slidesPerView={4}           // ← show 4 slides at once
-      spaceBetween={24}           // gap between slides
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 3000 }}
-      breakpoints={{
-        0:   { slidesPerView: 1 }, // 0px+
-        640: { slidesPerView: 2 }, // 640px+
-        1024:{ slidesPerView: 4 }  // 1024px+
-      }}
-      className="!py-8"
-    >
-      {logos.map((logo, idx) => (
-        <SwiperSlide key={idx} className="flex justify-center">
-          <div className="w-48 h-28 sm:w-56 sm:h-32">
-            <Image
-              src={logo.src}
-              fill
-              alt={logo.alt}
-              className="object-contain w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-</div>
+    <div className="relative w-full overflow-hidden flex flex-col">
+      <Image
+        src={headerImage}
+        alt="Hero"
+        fill
+        className="object-cover object-center"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/50 z-10" />
+      
+      <div className="relative z-20 flex flex-col items-center py-6">
+        <h2
+          id="clients"
+          className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4b8acd] mb-3 scroll-mt-20 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]" 
+        >
+          عملاء سعدنا بخدمتهم
+        </h2>
+        <div className="mt-2 w-24 h-1 bg-[#1FD2AA]" />
+      </div>
 
-            </div>
-            </div>
-  )
+      <div className="relative z-20 flex items-center justify-center flex-1 py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8">
+          {clientImages.map((src, idx) => (
+              <div
+                key={idx}
+                className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44"
+              >
+                <div className="relative w-full h-full bg-white rounded-lg shadow-lg p-2">
+                  <Image
+                    src={src}
+                    alt={`Client ${idx + 1}`}
+                    fill
+                    sizes="(max-width: 640px) 112px, (max-width: 768px) 128px, (max-width: 1024px) 144px, (max-width: 1280px) 160px, 176px"
+                    className="object-contain object-center"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

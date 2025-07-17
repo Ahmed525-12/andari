@@ -4,7 +4,7 @@ import headerImage from '../public/9fea089ebe4cae0337a936d1916074350640c188.jpg'
 
 export default function HeroHeader() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden" id='header'>
       {/* Background Image */}
       <Image
         src={headerImage}

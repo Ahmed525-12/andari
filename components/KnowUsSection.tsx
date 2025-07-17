@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import headerImage from '../public/9d9bf1528f4ca693c0e27a7a9a7175bebbe2b3f9.jpg' 
-// import video1 from '../public/video1.mp4' 
 import CardCarousel, { VideoCard } from '@/components/CardCarousel';
 
 
@@ -9,25 +8,25 @@ const videoCards: VideoCard[] = [
     {
       id: 1,
       title: "Intro Video",
-      videoUrl: "/video1.mp4", // local file in public/videos/
+      videoUrl: "/templateProject.mp4", // local file in public/videos/
       description: "A local intro video"
     },
     {
       id: 2,
       title: "Intro Video",
-      videoUrl: "/video1.mp4",
+      videoUrl: "/templateProject.mp4",
       description: "A local intro video"
     },
     {
         id: 3,
         title: "Intro Video",
-        videoUrl: "/video1.mp4",
+        videoUrl: "/templateProject.mp4",
         description: "A local intro video"
       },
       {
         id:4,
         title: "Intro Video",
-        videoUrl: "/video1.mp4",
+        videoUrl: "/templateProject.mp4",
         description: "A local intro video"
       },
   ];
