@@ -52,20 +52,20 @@ const Navbar: React.FC = () => {
               >
                 الخبرة
               </a>
-              <a
+              {/* <a
                 href="#team"
                 onClick={(e) => handleScroll(e, "team")}
                 className="text-white hover:text-blue-200 px-3 py-2 text-l font-medium transition-colors duration-200 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]"
               >
                 الفريق
+              </a> */}
+             <a
+                href="#clients"
+                onClick={(e) => handleScroll(e, "clients")}
+                className="text-white hover:text-blue-200 px-3 py-2 text-l font-medium transition-colors duration-200 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]"
+              >
+                عملائنا
               </a>
-              <a
-              href="#clients"
-              className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              عملائنا
-            </a>
               <a
                 href="#contact"
                 onClick={(e) => handleScroll(e, "contact")}
@@ -170,13 +170,13 @@ const Navbar: React.FC = () => {
             >
               الخبرة
             </a>
-            <a
+            {/* <a
               href="#team"
               className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               الفريق
-            </a>
+            </a> */}
             <a
               href="#clients"
               className="[text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white hover:text-blue-200 hover:bg-blue-600/50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"

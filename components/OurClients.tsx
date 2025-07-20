@@ -13,7 +13,7 @@ const clientImages = [
 
 export default function OurClients() {
   return (
-    <div className="relative w-full overflow-hidden flex flex-col">
+    <div className="relative w-full overflow-hidden flex flex-col py-60">
       <Image
         src={headerImage}
         alt="Hero"
@@ -26,7 +26,7 @@ export default function OurClients() {
       <div className="relative z-20 flex flex-col items-center py-6">
         <h2
           id="clients"
-          className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4b8acd] mb-3 scroll-mt-20 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]" 
+          className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4b8acd] mb-3 scroll-mt-40 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]" 
         >
           عملاء سعدنا بخدمتهم
         </h2>
