@@ -42,8 +42,8 @@ export default function OurServiceSection() {
         }
       ];
   return (
-   <div className="bg-gray-200 py-19">
- <section className="py-16 px-4 sm:px-6 lg:px-8">
+   <div className="bg-gray-200 pb-19">
+ <section className="pb-16 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center" >
             <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4b8acd] mb-3 scroll-mt-20" id='services'>
             نرسم الخرائط            </h2>

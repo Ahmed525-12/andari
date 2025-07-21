@@ -2,11 +2,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { Tajawal } from 'next/font/google';
-
+import localFont from 'next/font/local';
 // 1️⃣ — Static Metadata (global)
 export const metadata: Metadata = {
-  // Core
   title: {
     default: 'أندري للاستشارات | تخطيط استراتيجي وخبرات عميقة',
     template: '%s | أندري للاستشارات',
@@ -36,9 +34,7 @@ export const metadata: Metadata = {
   },
   viewport:
     'width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5',
-  themeColor: '#094d92', // corporate blue
-
-  // 2️⃣ — Canonical and alternates
+  themeColor: '#094d92',
   alternates: {
     canonical: 'https://andari.sa/',
     languages: {
@@ -46,8 +42,6 @@ export const metadata: Metadata = {
       'en-US': 'https://andari.sa/en',
     },
   },
-
-  // 3️⃣ — Open Graph (Facebook, LinkedIn, WhatsApp)
   openGraph: {
     type: 'website',
     url: 'https://andari.sa/',
@@ -71,8 +65,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
-  // 4️⃣ — Twitter Card
   twitter: {
     card: 'summary_large_image',
     site: '@Andari_SA',
@@ -82,8 +74,6 @@ export const metadata: Metadata = {
       'نربط رؤيتكم بالواقع عبر خطط تنفيذية محكمة وخدمات حوكمة ومخاطر متكاملة.',
     images: ['https://andari.sa/og-cover.jpg'],
   },
-
-  // 5️⃣ — Icons
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-32.png',
@@ -94,8 +84,6 @@ export const metadata: Metadata = {
       color: '#094d92',
     },
   },
-
-  // 6️⃣ — Structured Data via JSON-LD
   other: {
     'organization-schema': `
     {
@@ -128,16 +116,21 @@ export const metadata: Metadata = {
   },
 };
 
-const tajawal = Tajawal({
-  subsets: ['arabic'],
-  weight: ['400', '500', '700'],
-  variable: '--font-tajawal',
+// 2️⃣ — Load Avenir Arabic locally
+const avenirArabic = localFont({
+  src: './fonts/FontAndrai.otf',
+  variable: '--font-avenir-arabic',
+  display: 'swap',
 });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ar" dir="rtl">
-      <body className={`${tajawal.variable} bg-white text-gray-900 scroll-smooth`}>
+    <html
+      lang="ar"
+      dir="rtl"
+     
+    >
+      <body className={`bg-white text-gray-900 scroll-smooth font-sans ${avenirArabic.variable}`}>
         {children}
       </body>
     </html>
