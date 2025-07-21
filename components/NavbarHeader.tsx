@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <a href='https://wa.me/0568026357' target='_blank' className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center space-x-2">
+            <a href='https://wa.me/0560656965' target='_blank' className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center space-x-2">
               <svg
                 className="w-4 h-4"
                 fill="currentColor"
@@ -196,7 +196,7 @@ const Navbar: React.FC = () => {
           
           
             <div className="pt-2">
-              <a  href='https://wa.me/0568026357' target='_blank' className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
+              <a  href='https://wa.me/0560656965' target='_blank' className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
