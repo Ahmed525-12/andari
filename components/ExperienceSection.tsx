@@ -12,7 +12,7 @@ export default function ExperienceSection() {
     {
       id: 1,
       icon: Building,
-      number: 3,
+      number: 7,
       text: "مشاريع مع جهات كبرى",
       iconColor: "text-emerald-400",
     },
@@ -79,7 +79,7 @@ export default function ExperienceSection() {
                     <IconComponent size={48} className={stat.iconColor} />
                   </div>
                   <div className="text-6xl font-bold mb-4">
-                    <CountUp start={0} end={stat.number} />
+                  <span><CountUp start={0} end={+ stat.number} />+</span>
                   </div>
                   <div className="text-lg font-medium leading-relaxed">
                     {stat.text}

@@ -34,7 +34,7 @@ const AndariFooter = () => {
             className="text-xl md:text-4xl font-light mb-6 leading-relaxed text-white"
             dir="rtl"
           >
-            لا تتردد بالتواصل، لكننا جزءًا من نجاح قصتك !
+            لا تتردد بالتواصل، لنكن جزءًا من نجاح قصتك !
           </h2>
           <div className="w-2/4 h-0.5 bg-white rounded-2xl mx-auto mb-8"></div>
         </motion.div>
@@ -114,14 +114,7 @@ const AndariFooter = () => {
             >
               الخبرة
             </a>
-            <a
-              onClick={(e) => handleScroll(e, "team")}
-              href="#team"
-              className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-lg"
-              dir="rtl"
-            >
-              الفريق
-            </a>
+           
           </motion.div>
 
           {/* Column 3 - Contact Info */}

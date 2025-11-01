@@ -16,7 +16,7 @@ type PartnerCarouselProps = {
   className?: string;
 };
 
-const Images = ["/i1.png", "/i2.png", "/i3.png", "/i4.png", "/i5.png"];
+const Images = ["/i1.png", "/i2.png", "/i3.png", "/i4.png", "/i5.png","/i6.png", "/i7.png", "/i8.png"];
 const clientImages = [...Images, ...Images, ...Images];
 
 function ClientsCarousel({ className }: PartnerCarouselProps) {
