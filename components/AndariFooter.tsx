@@ -23,7 +23,7 @@ const AndariFooter = () => {
             لا تتردد بالتواصل، لكننا جزءًا من نجاح قصتك !
           </h2>
           <div className="w-20 h-0.5 bg-[#1FD2AA] mx-auto mb-8"></div>
-          <a  href='https://wa.me/0568026357' target='_blank' className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <a  href='https://wa.me/0568026357' target='_blank' className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
             تواصل معنا
           </a>
         </div>
